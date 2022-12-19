@@ -1,0 +1,77 @@
+.landing-Page .marsh {
+  float: right;
+  position: relative;
+  margin-right: 700px;
+  z-index: 1;
+  animation: dance 2s ease-in-out infinite; }
+  .landing-Page .marsh img {
+    z-index: 2;
+    position: absolute;
+    top: -160px;
+    height: 450px;
+    width: 550px; }
+
+@keyframes dance {
+  0% {
+    margin-right: 500px; }
+  25% {
+    margin-right: 600px; }
+  40% {
+    margin-right: 700px; }
+  55% {
+    margin-right: 800px; }
+  65% {
+    margin-right: 900px; }
+  74% {
+    margin-right: 800px; }
+  85% {
+    margin-right: 600px; }
+  100% {
+    margin-right: 500px; } }
+
+.landing-Page .detail {
+  margin-left: 60px;
+  z-index: 10; }
+  .landing-Page .detail .headcontent {
+    font-size: 40px;
+    position: relative;
+    margin-top: 40px;
+    top: 160px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    animation: text 2s ease-in-out infinite; }
+  .landing-Page .detail .content {
+    font-size: 20px;
+    color: white;
+    margin-top: 40px;
+    position: relative;
+    top: 150px;
+    font-weight: lighter; }
+
+@keyframes text {
+  0% {
+    color: red; }
+  25% {
+    color: #0fa8cf; }
+  50% {
+    color: #f6ff00; }
+  75% {
+    color: #1ff707; }
+  100% {
+    color: #b300ff; } }
+  .landing-Page .detail .button a {
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 40px;
+    position: relative;
+    top: 160px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: white;
+    text-decoration: none; }
+  .landing-Page .detail .button a:hover {
+    background-color: white;
+    color: #0a0a0a; }

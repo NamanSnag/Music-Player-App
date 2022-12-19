@@ -1,0 +1,95 @@
+.navigation {
+    height: 80px;
+    background: rgb(0, 0, 0);
+    box-shadow: rgb(10, 109, 214) 0px 10px 8px, 
+    rgba(71, 69, 69, 0.955) 0px -4px 10px, rgb(19, 94, 199) 0px 8px 6px, 
+    rgb(25, 87, 222) 0px 8px 7px, rgb(55, 111, 231) 0px -8px 5px;
+    animation: btnm 1s ease infinite;
+    #logo{
+        padding-left: 6vw;
+        float: left;
+        line-height: 80px;
+        font-size: 1.4em;
+        a{ 
+            text-decoration: none;
+          i{
+            font-size: 28px;
+            animation: icon 2s ease-in-out infinite;
+          }
+          @keyframes icon {
+            0%   {color:red; left:0px; top:0px;}
+            25%  {color:rgb(15, 168, 207); left:200px; top:0px;}
+            50%  {color:rgb(246, 255, 0); left:200px; top:200px;}
+            75%  {color:rgb(31, 247, 7); left:0px; top:200px;}
+            100% {color:rgb(179, 0, 255); left:0px; top:0px;}
+          }
+          span {
+            font-size: 22px;
+            padding-left: 10px;
+            color: white;
+            font-weight: bold;
+          }
+          span:hover {
+            color: chartreuse;
+          }
+        }
+    }
+    @keyframes btnm {
+      0%   {box-shadow: rgb(10, 109, 214) 0px 10px 8px, 
+        rgba(71, 69, 69, 0.955) 0px -4px 10px, rgb(19, 94, 199) 0px 8px 6px, 
+        rgb(25, 87, 222) 0px 8px 7px, rgb(55, 111, 231) 0px -8px 5px;}
+
+        25%  {box-shadow: rgb(194, 10, 214) 0px 10px 8px, 
+          rgba(142, 15, 142, 0.955) 0px -4px 10px, rgb(19, 94, 199) 0px 18px 6px, 
+          rgb(222, 25, 160) 0px 18px 7px, rgb(231, 55, 193) 0px -12px 5px;}
+
+      50% {box-shadow: rgb(10, 214, 64) 0px 10px 8px, 
+        rgba(71, 69, 69, 0.955) 0px -4px 10px, rgb(169, 199, 19) 0px 8px 6px, 
+        rgb(25, 222, 35) 0px 8px 7px, rgb(55, 231, 169) 0px -8px 5px;}
+
+        100%   {box-shadow: rgb(10, 109, 214) 0px 10px 8px, 
+          rgba(71, 69, 69, 0.955) 0px -4px 10px, rgb(19, 94, 199) 0px 8px 6px, 
+          rgb(25, 87, 222) 0px 8px 7px, rgb(55, 111, 231) 0px -8px 5px;}
+    }
+  }
+
+  nav {
+    float: right;
+    margin-right: 8vw;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      li {
+        float: left;
+        position: relative;
+        a {
+          display: block;
+          padding: 10px 20px 0 20px;
+          line-height: 50px;
+          font-size: 22px;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+          
+           &::before {
+             transition: 300ms;
+             height: 5px;
+             content: "";
+             position: absolute;
+             background-color: rgb(50, 234, 4);
+             width: 0%;
+             bottom: 0px;
+          }
+  
+          &:hover::before{
+            width: 70%;
+          }
+          &:not(:only-child):after {
+            padding-left: 4px;
+            content: ' ▾';
+          }
+        } 
+      }
+    }
+  }
+  

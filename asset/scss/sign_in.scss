@@ -1,0 +1,70 @@
+.sign-in{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    height: 100%;
+    .container {
+        background: #fff;
+        width: 410px;
+        padding: 30px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        .text {
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center;
+        }
+        form {
+            margin-top: -20px;
+            .data {
+                height: 45px;
+                width: 100%;
+                margin: 40px 0;
+                label {
+                    font-size: 18px;
+                }
+                input {
+                    height: 100%;
+                    width: 100%;
+                    padding-left: 10px;
+                    font-size: 17px;
+                    border: 1px solid silver;
+                }
+                input:focus {
+                    border-color: #3498db;
+                    border-bottom-width: 2px;
+                }
+            }
+            .btn {
+                margin: 30px 0;
+                height: 45px;
+                width: 100%;
+                button {
+                    height: 100%;
+                    width: 100%;
+                    background: linear-gradient(90deg ,blue, green, yellow);
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                }
+            }
+            .btn:hover{
+                .inner {
+                    left: 0;
+                }
+            } 
+            .signup-link {
+                text-align: center;
+                a {
+                    color: #3498db;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+}
+}

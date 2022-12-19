@@ -1,0 +1,36 @@
+<header class="navigation">
+    <div id="logo">
+        <a href="/"><i class="fa fa-volume-up"></i> <span>Music</span></a>
+    </div>   
+    <nav>
+        <ul class="nav-list">
+            <% if(locals.user){ %>
+                <li>
+                    <a href="/user/profile">
+                        <%= user.name %>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/user/sign-out">
+                        Sign-Out
+                    </a>
+                </li>
+                
+            <% }else{ %>
+                
+                    <li>
+                        <a href="/user/sign-in">
+                            Sign-In
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="/user/sign-up">
+                            Sign-Up
+                        </a>
+                    </li>
+            <% } %>
+        </ul>
+      </nav>
+</header>
